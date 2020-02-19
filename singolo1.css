@@ -1,0 +1,79 @@
+body {
+    background-color: #000000;
+}
+
+#wrapper {
+    margin: 0 auto;
+}
+
+#header {
+    width: 1020px;
+    height: 90px;
+    background-color: #2d303a;
+    border-bottom: 5px solid #323746;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 6px;
+    letter-spacing: 0.3px;
+    color: #ffffff;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 41px;
+}
+
+h1 snap {
+    color: red;
+    font-weight: 500;
+    padding-right: 5px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+    align-items: center;
+    position: relative;
+    left: 595px
+}
+
+.menu a:first-child {
+    color: #f06c64;
+}
+
+.menu a {
+    font-size: 11.7px;
+    line-height: 6px;
+    color: white;
+    font-family: "Lato";
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    position: relative;
+    bottom: 1px;
+}
+
+#slider {
+    width: 1020px;
+    height: 595px;
+    background-color: #f06c64;
+    border-bottom: 5px solid #ea676b;
+}
+
+#footer {
+    width: 1020px;
+    height: 495px;
+    background-color: #f2f2f2;
+    border-bottom: 5px solid white;
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    src: url(./assets/fonts/Lato-Light.ttf);
+}
