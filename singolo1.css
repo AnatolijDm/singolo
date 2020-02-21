@@ -64,6 +64,46 @@ h1 snap {
     border-bottom: 5px solid #ea676b;
 }
 
+#slider a:first-child {
+    margin-left: 42px;
+    position: absolute;
+    bottom: 251px;
+}
+
+ #vertical {
+    position: absolute;
+    left: 110px;
+    top: 147px;
+    z-index: 1;
+}
+
+#verticalScreen {
+    position: absolute;
+    left: 122px;
+    top: 209px;
+    z-index: 2;
+}
+
+#horizontal {
+    position: absolute;
+    left: 424px;
+    bottom: 148px;
+    z-index: 3;
+}
+
+#horizontalScreen {
+    position: absolute;
+    left: 482px;
+    top: 280px;
+    z-index: 4;
+}
+
+#slider a:last-child {
+    position: absolute;
+    bottom: 251px;
+    left: 964px;
+}
+
 #footer {
     width: 1020px;
     height: 495px;
@@ -71,9 +111,41 @@ h1 snap {
     border-bottom: 5px solid white;
 }
 
+#service {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-bold";
+    font-weight: 900;
+    text-align: left;
+    margin-left: 40px;
+    padding-top: 68px;
+}
+
+#service--text {
+    width: 960px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    padding-left: 40px;
+    padding-top: 27px;
+    letter-spacing: 0.15px;
+}
+
 @font-face {
     font-family: "Lato";
     font-style: normal;
     font-weight: normal;
     src: url(./assets/fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: "Lato-bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url(./assets/fonts/Lato-Black.ttf);
 }
