@@ -111,6 +111,23 @@ h1 snap {
     border-bottom: 5px solid white;
 }
 
+#footer--service {
+    display: flex;
+    flex-direction: row;
+}
+
+#first--col {
+    flex-direction: column;
+}
+
+#middle--col {
+    flex-direction: column;
+}
+
+#right--col {
+    flex-direction: column;
+}
+
 #service {
     font-size: 30px;
     line-height: 18px;
@@ -134,6 +151,114 @@ h1 snap {
     padding-left: 40px;
     padding-top: 27px;
     letter-spacing: 0.15px;
+}
+
+#pen {
+    margin-left: 40px;
+    padding-top: 49px;
+    width: 62px;
+    height: 61px;
+}
+
+.footer--block {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer--block-text{
+    flex-direction: column;
+}
+
+#pen--design {
+    padding-left: 18px;
+    padding-top: 48px;
+}
+
+.footer--block-text p:first-child {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato-bold";
+    font-weight: 900;
+    text-align: left;
+}
+
+.footer--block-text p:last-child {
+    width: 219px;
+    height: 128px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    padding-top: 10px;
+}
+
+#resp {
+    margin-left: 40px;
+    width: 62px;
+    height: 61px;
+    position: relative;
+    bottom: 32px;
+}
+
+#resp--design {
+    padding-left: 18px;
+    position: relative;
+    bottom: 33px;
+}
+
+#inov {
+    margin-left: 20px;
+    padding-top: 49px;
+    width: 61px;
+    height: 61px;
+}
+
+#inov--design {
+    padding-left: 18px;
+    padding-top: 48px;
+}
+
+#supp {
+    margin-left: 20px;
+    width: 61px;
+    height: 61px;
+    position: relative;
+    bottom: 32px;
+}
+
+#supp--design {
+    padding-left: 18px;
+    position: relative;
+    bottom: 33px;
+}
+
+#love {
+    margin-left: 22px;
+    padding-top: 49px;
+    width: 62px;
+    height: 61px;
+}
+
+#love--design {
+    padding-left: 18px;
+    padding-top: 48px;
+}
+
+#feel {
+    margin-left: 22px;
+    width: 62px;
+    height: 61px;
+    position: relative;
+    bottom: 32px;
+}
+
+#feel--design {
+    padding-left: 18px;
+    position: relative;
+    bottom: 33px;
 }
 
 @font-face {
