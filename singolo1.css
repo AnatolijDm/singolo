@@ -64,11 +64,24 @@ h1 snap {
     bottom: 6px;
 }
 
+.menu a:hover {
+    font-size: 13px;
+    animation-name: menu;
+    animation-duration: 1s;
+}
+
 #slider {
     width: 1020px;
     height: 595px;
     background-color: #f06c64;
     border-bottom: 5px solid #ea676b;
+}
+
+#slider a:hover {
+    background-color: #f06c64;
+    z-index: 2;
+    animation-name: hover;
+    animation-duration: 2s;
 }
 
 #slider a:first-child {
@@ -308,3 +321,13 @@ h1 snap {
     font-weight: normal;
     src: url(./assets/fonts/Lato-Black.ttf);
 }
+
+@keyframes hover {
+    from {background-color: #f06c64;}
+    to {background-color: rgb(245, 238, 238);}
+  }
+
+  @keyframes menu {
+    from {font-size: 11.7px;}
+    to {font-size: 13px;}
+  }
