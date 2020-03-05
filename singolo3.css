@@ -1,0 +1,184 @@
+body {
+    background-color: #000000;
+}
+
+#wrapper {
+    margin: 0 auto;
+}
+
+#form {
+    width: 1020px;
+    height: 649px;
+    background-color: #f06c64;
+    border-bottom: 5px solid #ea676b;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato-bold";
+    font-weight: 900;
+    text-align: left;
+    margin-left:40px;
+    padding-top: 68px;
+
+}
+
+#form p {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 300;
+    text-align: left;
+    margin-left: 40px;
+    padding-top: 27px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 31px;
+}
+
+#form--input {
+    display: flex;
+    flex-direction: row;
+}
+
+.formText {
+    width: 604px;
+    height: 34px;
+    border-radius: 5px;
+    border: 1px solid #d6564f;
+    background-color: #d6564f;
+    margin-left: 40px;
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato-b";
+    font-weight: 400;
+    text-align: left;
+    opacity: 1; 
+    padding-left: 13px;
+}
+
+#formComments {
+    width: 604px;
+    height: 198px;
+    border-radius: 5px;
+    border: 1px solid #d6564f;
+    background-color: #d6564f;
+    margin-left: 40px;
+    margin-top: 16px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato-b";
+    font-weight: 400;
+    text-align: left;
+    opacity: 1; 
+    padding-left: 13px;
+}
+
+::placeholder {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f48c8f;
+    font-family: "Lato-b";
+    font-weight: 400;
+    text-align: left;
+    opacity: 1; 
+    position: relative;
+    bottom: 1px;
+  }
+
+  #formComments::placeholder {
+    position: relative;
+    bottom: 84px;
+  }
+
+  #contact {
+      margin-left: 20px;
+      margin-top: 1px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 18px;
+    color: #f0d8d9;
+    font-family: "Lato-b";
+    font-weight: 900;
+    text-align: left;
+    margin-top: 46px;
+    margin-left: 1px;
+  }
+
+  #contact p, snap {
+    width: 300px;
+    height: 108px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: "Lato";
+    font-weight: 400;
+    text-align: left;
+    margin-left: 0px;
+    padding-top: 10px;
+  }
+
+  snap {
+      position: relative;
+      left: 8px;
+      line-height: 21px;
+  }
+
+  #location {
+    padding-left: 4px;
+    position: relative;
+    left: 0px;
+    top: 1px;
+  }
+
+  #phoneNumb {
+    position: relative;
+    left: 2px;
+    top: 1px;
+  }
+
+  #mail {
+    position: relative;
+    left: 1px;
+    top: 2px;
+  }
+
+  #mailText {
+    position: relative;
+    left: 7px;
+    top: 1px;
+  }
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: normal;
+    src: url(./assets/fonts/Lato-Light.ttf);
+}
+
+@font-face {
+    font-family: "Lato-bold";
+    font-style: normal;
+    font-weight: normal;
+    src: url(./assets/fonts/Lato-Black.ttf);
+}
+
+@font-face {
+    font-family: "Lato-b";
+    font-style: normal;
+    font-weight: normal;
+    src: url(./assets/fonts/Lato-Bold.ttf);
+}
