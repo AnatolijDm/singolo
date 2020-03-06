@@ -162,6 +162,29 @@ form {
     top: 1px;
   }
 
+  #footer {
+    width: 1020px;
+    height: 78px;
+    background-color: #2d303a;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #footer--icon {
+    margin-left: 42px;
+    padding-top: 31px;
+  }
+
+  #social {
+    padding-top: 21px;
+    position: relative;
+    left: 692px;
+  }
+
+  #social a {
+    margin-right: 2px;
+  }
+
 @font-face {
     font-family: "Lato";
     font-style: normal;
