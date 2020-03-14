@@ -107,6 +107,16 @@ h1 {
     z-index: 2;
 }
 
+#verticalScreen2 {
+    width: 190px;
+    height: 333px;
+    position: absolute;
+    left: 385px;
+    top: 213px;
+    z-index: 4;
+    display: none;
+}
+
 #horizontal {
     position: absolute;
     left: 424px;
@@ -119,6 +129,14 @@ h1 {
     left: 482px;
     top: 280px;
     z-index: 4;
+}
+
+#horizontalScreen2 {
+    position: absolute;
+    left: 308px;
+    top: 280px;
+    z-index: 2;
+    display: none;
 }
 
 #slider a:last-child {
