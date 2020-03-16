@@ -600,6 +600,19 @@ form {
     flex-direction: row;
 }
 
+#send {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #F06C64;
+    border-radius: 5px;
+    background-color: #d6564f;
+    box-shadow: 0 0 10px #9b302b;
+    margin-left: 500px;
+    margin-top: 10px;
+    font-family: "Lato-b";
+    color: #eb9dc4;
+}
+
 .formText {
     width: 604px;
     height: 34px;

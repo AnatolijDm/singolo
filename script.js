@@ -873,3 +873,23 @@ document.getElementById('robot').addEventListener('click', () => {
     document.querySelector( '#iconsUp' ).style.border = '0px solid #F06C64';
     document.querySelector( '#birdsUp' ).style.border = '0px solid #F06C64';
 })
+
+document.querySelector( '#send' ).addEventListener('click', () => {
+    let subjectValue;
+    let describtionValue;
+
+    if (document.querySelector( '#subject' ).value === '') {
+        subjectValue = 'Without subject';
+    } else {
+        subjectValue = document.querySelector( '#subject' ).value;
+    }
+    if (document.querySelector( '#formComments' ).value === '') {
+        describtionValue = 'Without description';
+    } else {
+        describtionValue = document.querySelector( '#formComments' ).value;
+    }
+    document.querySelector( '#subject' ).value
+    let message = ('The letter was sent\n' + 'Subject: ' + `${subjectValue}` + '\n' + 'Description: ' + `${describtionValue}` + '\n');
+
+    alert(message);
+})
