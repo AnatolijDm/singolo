@@ -368,15 +368,15 @@ h1 {
     border: 1px solid #c5c5c5;
 }
 
-#navigation-line a:last-child {
+#artwork {
     width: 55px;
 }
 
-#navigation-line a:nth-child(2) {
+#webDesign {
     width: 76px;
 }
 
-#navigation-line a:nth-child(3) {
+#graphic {
     width: 91px;
 }
 
@@ -406,12 +406,41 @@ h1 {
     margin-left: 40px;
 }
 
-.images-line img {
+#webGrap {
+    display: none;
+}
+
+#webGrapMid {
+    display: none;
+}
+
+#artGrap {
+    display: none;
+}
+
+#webAll {
+    display: flex;
+}
+
+#artAll {
+    display: flex;
+}
+
+.images-line a {
     width: 220px;
     height: 187px;
     margin-top: 3px;;
     margin-right: 20px;
     margin-bottom: 17px;
+}
+
+.images-line a:hover {
+    width: 220px;
+    height: 187px;
+    margin-top: 3px;;
+    margin-right: 20px;
+    margin-bottom: 17px;
+    box-shadow: 0 0 10px white;
 }
 
 #aboutUs {
