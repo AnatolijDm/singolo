@@ -2,45 +2,20 @@ let slider = 'current';
 let VerticalIphone = 'on';
 let horizontalIphone = 'on';
 
-document.querySelector('#home').addEventListener('click', () => {
-    document.querySelector('#home').style.color = '#f06c64';
-    document.querySelector('#servicesId').style.color = 'white';
-    document.querySelector('#portfolioId').style.color = 'white';
-    document.querySelector('#aboutId').style.color = 'white';
-    document.querySelector('#contactId').style.color = 'white';
-})
-
-document.querySelector('#servicesId').addEventListener('click', () => {
-    document.querySelector('#home').style.color = 'white';
-    document.querySelector('#servicesId').style.color = '#f06c64';
-    document.querySelector('#portfolioId').style.color = 'white';
-    document.querySelector('#aboutId').style.color = 'white';
-    document.querySelector('#contactId').style.color = 'white';
-})
-
-document.querySelector('#portfolioId').addEventListener('click', () => {
-    document.querySelector('#home').style.color = 'white';
-    document.querySelector('#servicesId').style.color = 'white';
-    document.querySelector('#portfolioId').style.color = '#f06c64';
-    document.querySelector('#aboutId').style.color = 'white';
-    document.querySelector('#contactId').style.color = 'white';
-})
-
-document.querySelector('#aboutId').addEventListener('click', () => {
-    document.querySelector('#home').style.color = 'white';
-    document.querySelector('#servicesId').style.color = 'white';
-    document.querySelector('#portfolioId').style.color = 'white';
-    document.querySelector('#aboutId').style.color = '#f06c64';
-    document.querySelector('#contactId').style.color = 'white';
-})
-
-document.querySelector('#contactId').addEventListener('click', () => {
-    document.querySelector('#home').style.color = 'white';
-    document.querySelector('#servicesId').style.color = 'white';
-    document.querySelector('#portfolioId').style.color = 'white';
-    document.querySelector('#aboutId').style.color = 'white';
-    document.querySelector('#contactId').style.color = '#f06c64';
-})
+document.addEventListener('scroll', onScroll);
+function onScroll() {
+    const links = document.querySelectorAll('.menu > a');
+    document.querySelectorAll('#page > div').forEach((e) => {
+        if (e.offsetTop <= window.scrollY && (e.offsetTop + e.offsetHeight) > window.scrollY) {
+            links.forEach((a) => {
+                a.classList.remove('active');
+                if (e.getAttribute('id') === a.getAttribute('href').substring(1)) {
+                    a.classList.add('active');
+                }
+            })
+        }
+    }) 
+}
 
 document.querySelector('#sliderLeft').addEventListener('click', () => {
     if (slider === 'current') {
