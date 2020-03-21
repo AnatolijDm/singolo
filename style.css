@@ -789,3 +789,87 @@ form {
     from {font-size: 11.7px;}
     to {font-size: 13px;}
   }
+
+  @keyframes sliderOn {
+    from {background-color: #f06c64;}
+    to {background-color: #648BF0;}
+  }
+
+  @keyframes sliderBack {
+    from {background-color: #648BF0;}
+    to {background-color: #f06c64;}
+  }
+
+  @keyframes verticalPhOn {
+    from {left: 110px;
+        z-index: 1;
+    }
+    to {left: 370px;
+        z-index: 3;
+    }
+  }
+
+  @keyframes verticalScreenOn {
+    from {
+        left: 122px;
+        top: 209px;
+    }
+    to {
+        left: 385px;
+        top: 213px;
+    }
+  }
+
+  @keyframes verticalPhBack {
+    from {left: 370px;
+        z-index: 3;
+    }
+    to {left: 110px;
+        z-index: 1;
+    }
+  }
+
+  @keyframes verticalScreenBack {
+    from {
+        left: 385px;
+        top: 213px;
+    }
+    to {
+        left: 122px;
+        top: 209px;
+    }
+  }
+
+  @keyframes horizontalPhOn {
+    from {left: 424px;}
+    to {left: 250px;}
+  }
+
+  @keyframes horizontalScreenOn {
+    from {
+        left: 482px;
+        z-index: 4;
+    }
+    to {
+        left: 308px;
+        z-index: 2;
+    }
+  }
+
+  @keyframes horizontalPhBack {
+    from {left: 250px;}
+    to {left: 424px;}
+  }
+
+  @keyframes horizontalScreenBack {
+    from {
+        left: 308px;
+        z-index: 2;
+    }
+    to {
+        left: 482px;
+        z-index: 4;
+    }
+  }
+
+  

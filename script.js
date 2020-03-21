@@ -22,15 +22,25 @@ document.querySelector('#sliderLeft').addEventListener('click', () => {
         if (VerticalIphone === 'on') {
             document.querySelector('#verticalScreen2').style.display = 'block';
         }
+        document.querySelector('#verticalScreen2').style.animationName = 'verticalScreenOn';
+        document.querySelector('#verticalScreen2').style.animationDuration = '1s';
         document.querySelector('#verticalScreen').style.display = 'none';
+        document.querySelector('#vertical').style.animationName = 'verticalPhOn';
+        document.querySelector('#vertical').style.animationDuration = '1s';
         document.querySelector('#vertical').style.left = '370px';
         document.querySelector('#horizontalScreen').style.display = 'none';
         if (horizontalIphone === 'on') {
             document.querySelector('#horizontalScreen2').style.display = 'block';
         }
+        document.querySelector('#horizontalScreen2').style.animationName = 'horizontalScreenOn';
+        document.querySelector('#horizontalScreen2').style.animationDuration = '1s';
+        document.querySelector('#horizontal').style.animationName = 'horizontalPhOn';
+        document.querySelector('#horizontal').style.animationDuration = '1s';
         document.querySelector('#horizontal').style.left = '250px';
         document.querySelector('#horizontal').style.zIndex = '1';
         document.querySelector('#vertical').style.zIndex = '3';
+        document.querySelector('#slider').style.animationName = 'sliderOn';
+        document.querySelector('#slider').style.animationDuration = '1s';
         document.querySelector('#slider').style.backgroundColor = '#648BF0';
         document.querySelector('#slider').style.borderBottom = '5px solid rgb(136, 164, 233)';
         slider = 'next';
@@ -38,14 +48,24 @@ document.querySelector('#sliderLeft').addEventListener('click', () => {
         if (VerticalIphone === 'on') {
             document.querySelector('#verticalScreen').style.display = 'block';
         }
+        document.querySelector('#verticalScreen').style.animationName = 'verticalScreenBack';
+        document.querySelector('#verticalScreen').style.animationDuration = '1s';
         document.querySelector('#verticalScreen2').style.display = 'none';
+        document.querySelector('#vertical').style.animationName = 'verticalPhBack';
+        document.querySelector('#vertical').style.animationDuration = '1s';
         document.querySelector('#vertical').style.left = '110px';
         document.querySelector('#vertical').style.zIndex = '1';
         if (horizontalIphone === 'on') {
             document.querySelector('#horizontalScreen').style.display = 'block';
         }
+        document.querySelector('#horizontalScreen').style.animationName = 'horizontalScreenBack';
+        document.querySelector('#horizontalScreen').style.animationDuration = '1s';
         document.querySelector('#horizontalScreen2').style.display = 'none';
+        document.querySelector('#horizontal').style.animationName = 'horizontalPhBack';
+        document.querySelector('#horizontal').style.animationDuration = '1s';
         document.querySelector('#horizontal').style.left = '424px';
+        document.querySelector('#slider').style.animationName = 'sliderBack';
+        document.querySelector('#slider').style.animationDuration = '1s';
         document.querySelector('#slider').style.backgroundColor = '#f06c64';
         document.querySelector('#slider').style.borderBottom = '5px solid #ea676b';
         slider = 'current';
@@ -57,30 +77,50 @@ document.querySelector('#sliderRight').addEventListener('click', () => {
         if (VerticalIphone === 'on') {
             document.querySelector('#verticalScreen2').style.display = 'block';
         }
+        document.querySelector('#verticalScreen2').style.animationName = 'verticalScreenOn';
+        document.querySelector('#verticalScreen2').style.animationDuration = '1s';
         document.querySelector('#verticalScreen').style.display = 'none';
+        document.querySelector('#vertical').style.animationName = 'verticalPhOn';
+        document.querySelector('#vertical').style.animationDuration = '1s';
         document.querySelector('#vertical').style.left = '370px';
         document.querySelector('#horizontalScreen').style.display = 'none';
         if (horizontalIphone === 'on') {
             document.querySelector('#horizontalScreen2').style.display = 'block';
         }
+        document.querySelector('#horizontalScreen2').style.animationName = 'horizontalScreenOn';
+        document.querySelector('#horizontalScreen2').style.animationDuration = '1s';
+        document.querySelector('#horizontal').style.animationName = 'horizontalPhOn';
+        document.querySelector('#horizontal').style.animationDuration = '1s';
         document.querySelector('#horizontal').style.left = '250px';
         document.querySelector('#horizontal').style.zIndex = '1';
         document.querySelector('#vertical').style.zIndex = '3';
+        document.querySelector('#slider').style.animationName = 'sliderOn';
+        document.querySelector('#slider').style.animationDuration = '1s';
         document.querySelector('#slider').style.backgroundColor = '#648BF0';
         document.querySelector('#slider').style.borderBottom = '5px solid rgb(136, 164, 233)';
         slider = 'next';
     } else if (slider === 'next') {
+        document.querySelector('#verticalScreen').style.animationName = 'verticalScreenBack';
+        document.querySelector('#verticalScreen').style.animationDuration = '1s';
         if (VerticalIphone === 'on') {
             document.querySelector('#verticalScreen').style.display = 'block';
         }
         document.querySelector('#verticalScreen2').style.display = 'none';
+        document.querySelector('#vertical').style.animationName = 'verticalPhBack';
+        document.querySelector('#vertical').style.animationDuration = '1s';
         document.querySelector('#vertical').style.left = '110px';
         document.querySelector('#vertical').style.zIndex = '1';
         if (horizontalIphone === 'on') {
             document.querySelector('#horizontalScreen').style.display = 'block';
         }
+        document.querySelector('#horizontalScreen').style.animationName = 'horizontalScreenBack';
+        document.querySelector('#horizontalScreen').style.animationDuration = '1s';
         document.querySelector('#horizontalScreen2').style.display = 'none';
+        document.querySelector('#horizontal').style.animationName = 'horizontalPhBack';
+        document.querySelector('#horizontal').style.animationDuration = '1s';
         document.querySelector('#horizontal').style.left = '424px';
+        document.querySelector('#slider').style.animationName = 'sliderBack';
+        document.querySelector('#slider').style.animationDuration = '1s';
         document.querySelector('#slider').style.backgroundColor = '#f06c64';
         document.querySelector('#slider').style.borderBottom = '5px solid #ea676b';
         slider = 'current';
