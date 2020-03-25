@@ -1,6 +1,8 @@
 let slider = 'current';
 let VerticalIphone = 'on';
 let horizontalIphone = 'on';
+let verticalRight;
+let horizontalleft;
 
 document.addEventListener('scroll', onScroll);
 function onScroll() {
@@ -22,6 +24,8 @@ document.querySelector('#sliderLeft').addEventListener('click', () => {
         if (VerticalIphone === 'on') {
             document.querySelector('#verticalScreen2').style.display = 'block';
         }
+        verticalRight = document.querySelector('#vertical').style.right.toString();
+        horizontalLeft = document.querySelector('#horizontal').style.left.toString();
         document.querySelector('#verticalScreen2').style.animationName = 'verticalScreenOn';
         document.querySelector('#verticalScreen2').style.animationDuration = '1s';
         document.querySelector('#verticalScreen').style.display = 'none';
@@ -55,7 +59,7 @@ document.querySelector('#sliderLeft').addEventListener('click', () => {
         document.querySelector('#vertical').style.animationName = 'verticalPhBack';
         document.querySelector('#vertical').style.animationDuration = '1s';
         document.querySelector('#vertical').style.left = '0';
-        document.querySelector('#vertical').style.right = '559px';
+        document.querySelector('#vertical').style.right = verticalRight;
         document.querySelector('#vertical').style.zIndex = '1';
         if (horizontalIphone === 'on') {
             document.querySelector('#horizontalScreen').style.display = 'block';
@@ -65,7 +69,7 @@ document.querySelector('#sliderLeft').addEventListener('click', () => {
         document.querySelector('#horizontalScreen2').style.display = 'none';
         document.querySelector('#horizontal').style.animationName = 'horizontalPhBack';
         document.querySelector('#horizontal').style.animationDuration = '1s';
-        document.querySelector('#horizontal').style.left = '314px';
+        document.querySelector('#horizontal').style.left = horizontalLeft;
         document.querySelector('#slider').style.animationName = 'sliderBack';
         document.querySelector('#slider').style.animationDuration = '1s';
         document.querySelector('#slider').style.backgroundColor = '#f06c64';
@@ -79,6 +83,8 @@ document.querySelector('#sliderRight').addEventListener('click', () => {
         if (VerticalIphone === 'on') {
             document.querySelector('#verticalScreen2').style.display = 'block';
         }
+        verticalRight = document.querySelector('#vertical').style.right.toString();
+        horizontalLeft = document.querySelector('#horizontal').style.left.toString();
         document.querySelector('#verticalScreen2').style.animationName = 'verticalScreenOn';
         document.querySelector('#verticalScreen2').style.animationDuration = '1s';
         document.querySelector('#verticalScreen').style.display = 'none';
@@ -112,7 +118,7 @@ document.querySelector('#sliderRight').addEventListener('click', () => {
         document.querySelector('#vertical').style.animationName = 'verticalPhBack';
         document.querySelector('#vertical').style.animationDuration = '1s';
         document.querySelector('#vertical').style.left = '0';
-        document.querySelector('#vertical').style.right = '559px';
+        document.querySelector('#vertical').style.right = verticalRight;
         document.querySelector('#vertical').style.zIndex = '1';
         if (horizontalIphone === 'on') {
             document.querySelector('#horizontalScreen').style.display = 'block';
@@ -122,7 +128,7 @@ document.querySelector('#sliderRight').addEventListener('click', () => {
         document.querySelector('#horizontalScreen2').style.display = 'none';
         document.querySelector('#horizontal').style.animationName = 'horizontalPhBack';
         document.querySelector('#horizontal').style.animationDuration = '1s';
-        document.querySelector('#horizontal').style.left = '314px';
+        document.querySelector('#horizontal').style.left = horizontalLeft;
         document.querySelector('#slider').style.animationName = 'sliderBack';
         document.querySelector('#slider').style.animationDuration = '1s';
         document.querySelector('#slider').style.backgroundColor = '#f06c64';
