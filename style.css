@@ -1120,113 +1120,56 @@ form {
     
     #portfolio {
         max-width: 768px;
-        height: 864px;
-        background-color: #2d303a;
-        border-bottom: 5px solid #323746;
-    }
-    
-    #title {
-        font-size: 30px;
-        line-height: 18px;
-        color: #666d89;
-        font-family: "Lato-bold";
-        font-weight: 900;
-        text-align: justify;
-        padding-left: 40px;
-        padding-top: 68px;
+        height: 1100px;
     }
     
     #portfolio p {
-        width: 940px;
-        height: 57px;
-        font-size: 18px;
-        line-height: 30px;
-        color: #767e9e;
-        font-family: "Lato";
-        font-weight: 300;
-        text-align: justify;
-        padding-left: 40px;
-        padding-top: 27px;
+        width: 680px;
+        height: 90px;
+        padding-left: 0px;
     }
-    
-    #navigation-line {
-       display: flex;
-       flex-direction: row;
-       margin-left: 41px;
-       position: relative;
-       bottom: 16px;
+
+    #images {
+        display: inline-block;
     }
-    
-    #navigation-line a:first-child {
-        width: 27px;
-        height: 20px;
-        color: #dedede;
-        border: 1px solid #c5c5c5;
-    }
-    
-    #artwork {
-        width: 55px;
-    }
-    
-    #webDesign {
-        width: 76px;
-    }
-    
-    #graphic {
-        width: 91px;
-    }
-    
-    #navigation-line a {
-        height: 20px;
-        font-size: 11.8px;
-        line-height: 22px;
-        color: #767e9e;
-        font-family: "Lato-b";
-        font-weight: 400;
-        text-align: center;
-        vertical-align: middle;
-        text-decoration: none;
-        border-radius: 5px;
-        background-color: #2d303a;
-        border: 1px solid #666d89;
-        margin-right: 10px;
-    }
-    
-    #navigation-line a:hover {
-        background-color: #141518;
-    }
-    
+
     .images-line {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         margin-left: 40px;
     }
     
     #webGrap {
         display: none;
+        flex-wrap: wrap;
     }
     
     #webGrapMid {
         display: none;
+        flex-wrap: wrap;
     }
     
     #artGrap {
         display: none;
+        flex-wrap: wrap;
     }
     
     #webAll {
         display: flex;
+        flex-wrap: wrap;
     }
     
     #artAll {
         display: flex;
+        flex-wrap: wrap;
     }
-    
+
     .images-line a {
         width: 220px;
         height: 187px;
         margin-top: 3px;;
-        margin-right: 20px;
+        margin-right: 10px;
         margin-bottom: 17px;
     }
     
@@ -1234,7 +1177,7 @@ form {
         width: 220px;
         height: 187px;
         margin-top: 3px;;
-        margin-right: 20px;
+        margin-right: 10px;
         margin-bottom: 17px;
         box-shadow: 0 0 10px white;
     }
@@ -1242,289 +1185,121 @@ form {
     #aboutUs {
         max-width: 768px;
         height: 729px;
-        background-color: #f2f2f2;
-        border-bottom: 5px solid #ffffff;
     }
-    
-    h2 {
-        font-size: 30px;
-        line-height: 18px;
-        color: #666d89;
-        font-family: "Lato-bold";
-        font-weight: 900;
-        text-align: justify;
-        padding-left: 40px;
-        padding-top: 68px;
-    }
-    
+
     #aboutUs p {
-        width: 940px;
-        height: 57px;
-        font-size: 18px;
-        line-height: 30px;
-        color: #767e9e;
-        font-family: "Lato";
-        font-weight: 300;
-        text-align: justify;
-        padding-left: 40px;
-        padding-top: 27px;
+        width: 680px;
     }
-    
-    #members {
-        display: flex;
-        flex-direction: row;
-        margin-left: 38px;
-        margin-top: 47px;
-    }
-    
-    .member {
-        margin-right: 16px;
-    }
-    
-    h3 {
-        font-size: 18px;
-        line-height: 18px;
-        color: #666d89;
-        font-family: "Lato-bold";
-        font-weight: 900;
-        text-align: justify;
-        margin-top: 12px;
-        margin-left: 1px;
-    }
-    
-    #desmondH {
-        position: relative;
-        bottom: 1px;
+
+    .member > img {
+       width: 219px;
     }
     
     #desmondP {
-        width: 302px;
-        position: relative;
-        bottom: 1px;
-    }
-    
-    #scolaraH {
-        position: relative;
-        bottom: 1px;
-        right: 1px;
+        width: 219px;
     }
     
     #scolaraP {
-        width: 302px;
-        position: relative;
-        bottom: 1px;
+        width: 219px;
     }
     
     .information {
-        width: 302px;
-        height: 65px;
-        font-size: 12px;
-        line-height: 22px;
-        color: #767e9e;
-        font-family: "Lato-b";
-        font-weight: 400;
-        text-align: left;
-        margin-top: 10px;
-        margin-left: 1px;
+        width: 219px;
+        height: 80px;
     }
-    
-    #desmond {
-        position: relative;
-        right: 1px;
-    }
-    
+
     .social {
-        margin-left: 2px;
+        position: relative;
+        right: 35px;
     }
-    
-    .social a {
-        margin-right: 2px;
-    }
-    
+
     #desmondA {
         position: relative;
-        bottom: 1px;
-        right: 1px;
+        right: 35px;
     }
-    
+
     #scolaraA {
         position: relative;
-        bottom: 1px;
-        right: 2px;
+        right: 35px;
+    }
+
+    .social a {
+        margin-right: 2px;
+        text-align: left;
     }
     
     #form {
         max-width: 768px;
         height: 649px;
-        background-color: #f06c64;
-        border-bottom: 5px solid #ea676b;
-    }
-    
-    #get {
-        font-size: 30px;
-        line-height: 18px;
-        color: #f0d8d9;
-        font-family: "Lato-bold";
-        font-weight: 900;
-        text-align: justify;
-        margin-left:40px;
-        padding-top: 68px;
-    
     }
     
     #form p {
-        width: 940px;
-        height: 57px;
-        font-size: 18px;
-        line-height: 30px;
-        color: #f0d8d9;
-        font-family: "Lato";
-        font-weight: 300;
-        text-align: justify;
-        margin-left: 40px;
-        padding-top: 27px;
-    }
-    
-    form {
-        display: flex;
-        flex-direction: column;
-        margin-top: 31px;
-    }
-    
-    #form--input {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    #send {
-        width: 100px;
-        height: 30px;
-        border: 1px solid #F06C64;
-        border-radius: 5px;
-        background-color: #d6564f;
-        box-shadow: 0 0 10px #9b302b;
-        margin-left: 500px;
-        margin-top: 10px;
-        font-family: "Lato-b";
-        color: #eb9dc4;
-    }
-    
-    #send:hover {
-        font-size: 16px;
-        box-shadow: 0 0 20px #9b302b;
+        width: 687px;
+        text-align: left;
+        margin-left: 0px;
     }
     
     .formText {
-        width: 604px;
-        height: 34px;
-        border-radius: 5px;
-        border: 1px solid #d6564f;
-        background-color: #d6564f;
-        margin-left: 40px;
-        margin-top: 16px;
-        font-size: 12px;
-        line-height: 22px;
-        color: #f48c8f;
-        font-family: "Lato-b";
-        font-weight: 400;
-        text-align: justify;
-        opacity: 1; 
-        padding-left: 13px;
+        width: 440px;
+        margin-left: -60px;
     }
     
     #formComments {
-        width: 604px;
-        height: 198px;
-        border-radius: 5px;
-        border: 1px solid #d6564f;
-        background-color: #d6564f;
-        margin-left: 40px;
-        margin-top: 16px;
-        font-size: 12px;
-        line-height: 22px;
-        color: #f48c8f;
-        font-family: "Lato-b";
-        font-weight: 400;
-        text-align: justify;
-        opacity: 1; 
-        padding-left: 13px;
+        width: 440px;
+        margin-left: -60px;
+    }
+
+    #send {
+        position: relative;
+        right: 110px;
     }
     
-    ::placeholder {
-        font-size: 12px;
-        line-height: 22px;
-        color: #f48c8f;
-        font-family: "Lato-b";
-        font-weight: 400;
-        text-align: justify;
-        opacity: 1; 
-        position: relative;
-        bottom: 1px;
-      }
-    
-      #formComments::placeholder {
-        position: relative;
-        bottom: 84px;
-      }
-    
       #contact {
-          margin-left: 20px;
+          margin-left: -80px;
           margin-top: 1px;
       }
     
-      #contactInfo {
-        font-size: 18px;
-        line-height: 18px;
-        color: #f0d8d9;
-        font-family: "Lato-b";
-        font-weight: 900;
-        text-align: justify;
-        margin-top: 46px;
-        margin-left: 1px;
-      }
-    
       #contact p, .contacts {
-        width: 300px;
-        height: 108px;
-        font-size: 12px;
-        line-height: 22px;
-        color: #f0d8d9;
-        font-family: "Lato";
-        font-weight: 400;
-        text-align: justify;
+        width: 220px;
+        height: 140px;
         margin-left: 0px;
-        padding-top: 10px;
       }
     
       .contacts {
           position: relative;
-          left: 8px;
+          left: 0px;
           line-height: 21px;
+      }
+
+      #adress {
+          position: relative;
+          right: 46px;
       }
     
       #location {
-        padding-left: 4px;
+        padding-left: 0px;
         position: relative;
         left: 0px;
-        top: 1px;
+        top: 0px;
+        margin-right: 6px;
       }
     
       #phoneNumb {
         position: relative;
-        left: 2px;
-        top: 1px;
+        left: -10px;
+        top: 0px;
       }
     
       #mail {
         position: relative;
-        left: 1px;
-        top: 2px;
+        left: -9px;
+        top: 0px;
       }
     
       #mailText {
         position: relative;
-        left: 7px;
-        top: 1px;
+        left: 0px;
+        top: 0px;
       }
     
       #footer {
@@ -1536,14 +1311,14 @@ form {
       }
     
       #footer--icon {
-        margin-left: 42px;
-        padding-top: 31px;
+        display: none;
       }
     
       #social {
         padding-top: 21px;
         position: relative;
-        left: 693px;
+        left: 300px;
+        right: 0;
       }
     
       #social a {
