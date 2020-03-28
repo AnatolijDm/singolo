@@ -3,6 +3,17 @@ let VerticalIphone = 'on';
 let horizontalIphone = 'on';
 let verticalRight;
 let horizontalleft;
+let menu = 'off';
+
+document.querySelector('#menu-button').addEventListener('click', () => {
+    if (menu === 'on') {
+        document.querySelector('.menu').style.display = 'none';
+        menu = 'off';
+    } else if (menu === 'off') {
+        document.querySelector('.menu').style.display = 'flex';
+        menu = 'on';
+    }
+})
 
 document.addEventListener('scroll', onScroll);
 function onScroll() {
@@ -16,6 +27,7 @@ function onScroll() {
                 }
             })
         }
+        document.querySelector('.menu').style.display = 'none';
     }) 
 }
 

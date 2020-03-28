@@ -43,6 +43,14 @@ h1 {
     font-size: 25px;
 }
 
+#menu-button {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
 .menu {
     display: flex;
     justify-content: space-around;
@@ -1326,4 +1334,468 @@ form {
       }
   }
 
+
+  @media (max-width: 375px) {
+    #wrapper {
+        max-width: 375px;   
+    }
+    
+    #header {
+        max-width: 375px; 
+        margin-left: 0px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    h1 {
+        position: relative;
+        left: 50px;
+    }
+
+    #menu-button {
+        width: 30px;
+        height: 30px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        z-index: 5;
+        display: block;
+    }
+
+    #menu-button > p {
+        color: white;
+    }
+
+    #menu-button:hover {
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+    }
+
+    #hidden {
+        display: none;
+    }
+
+    .menu a {
+        font-size: 20px;
+        line-height: 30px;
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        width: 278px;
+        position: relative;
+        left: 0px;
+        bottom: 1px;
+        height: 600px;
+        background-color: #2d303a;
+        z-index: 4;
+    }
+
+    .menu a:hover {
+        font-size: 23px;
+    }
+    
+    #slider {
+        padding-top: 95px;
+        max-width: 375px; 
+        height: 221px;
+    }
+    
+    #sliderLeft {
+        top: 192px;
+        right: 330px;
+        z-index: 3;
+    }
+    
+     #vertical {
+        width: 83px;
+        height: 165px;
+        top: -310px;
+        right: 200px;
+    }
+
+    @keyframes verticalPhOn {
+        from {right: 200px;
+            left: 0;
+        }
+        to {right: 0px;
+            left: 10px;
+        }
+      }
+
+      @keyframes verticalPhBack {
+        from {left: 10px;
+            right: 0px;
+        }
+        to {left: 0;
+            right: 200px;
+        }
+      }
+    
+    #verticalScreen {
+        width: 63px;
+        height: 115px;
+        margin: auto;
+        top: -317px;
+        right: 207px;
+    }
+
+    @keyframes verticalScreenOn {
+        from {
+            right: 207px;
+        }
+        to {
+            right: -3px;
+        }
+      }
+
+      @keyframes verticalScreenBack {
+        from {
+            right: -3px;
+        }
+        to {
+            right: 207px;
+        }
+      }
+    
+    #verticalScreen2 {
+        width: 63px;
+        height: 115px;
+        top: 152px;
+        right: -3px;
+    }
+    
+    #horizontal {
+        height: 83px;
+        width: 165px;
+        left: 100px;
+        top: -300px;
+    }
+    
+    #horizontalScreen {
+        height: 65px;
+        width: 115px;
+        left: 89px;
+        top: -308px;
+    }
+    
+    #horizontalScreen2 {
+        height: 65px;
+        width: 115px;
+        top: -308px;
+        right: 8px;
+    }
+
+    @keyframes horizontalPhOn {
+        from {left: 100px;}
+        to {left: 0px;}
+      }
+    
+      @keyframes horizontalScreenOn {
+        from {
+            left: 89px;
+            right: 0;
+        }
+        to {
+            left: 0px;
+            right: 8px;
+        }
+      }
+    
+      @keyframes horizontalPhBack {
+        from {left: 0px;}
+        to {left: 100px;}
+      }
+    
+      @keyframes horizontalScreenBack {
+        from {
+            left: 0px;
+            right: 8px;
+        }
+        to {
+            left: 89px;
+            right: 0;
+        }
+      }
+    
+    #sliderRight {
+        top: 192px;
+        left: 320px;
+    }
+    
+    #ourService {
+        max-width: 375px; 
+        height: 1040px;
+    }
+    
+    #ourService--service {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        width: 314px;
+    }
+    
+    #service {
+        font-size: 30px;
+        line-height: 18px;
+        color: #666d89;
+        font-family: "Lato-bold";
+        font-weight: 900;
+        text-align: justify;
+        margin-left: 30px;
+        padding-top: 38px;
+    }
+    
+    #service--text {
+        width: 314px;
+        height: 177px;
+        font-size: 18px;
+        line-height: 30px;
+        color: #767e9e;
+        font-family: "Lato";
+        font-weight: 300;
+        text-align: justify;
+        padding-left: 30px;
+        padding-top: 27px;
+        letter-spacing: 0.15px;
+    }
+    
+    #pen {
+        width: 62px;
+        height: 61px;
+    }
+    
+    .ourService--block {
+        display: flex;
+        flex-direction: row;
+        margin-left: 0px;
+        margin-right: 0px;
+        height: 124px;
+        width: 314px;
+    }
+    
+    .ourService--block-text{
+        flex-direction: column;
+        margin-left: 19px;
+    }
+    
+    #portfolio {
+        max-width: 375px; 
+        height: 750px;
+        overflow: hidden;
+    }
+    
+    #title {
+       padding-top: 40px;;
+       padding-left: 30px;
+    }
+
+    #portfolio p {
+        width: 315px;
+        height: 140px;
+        padding-left: 5px;
+    }
+
+    #images {
+        display: inline-block;
+    }
+
+    #navigation-line {
+        margin-left: 30px;
+    }
+
+    .images-line {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 30px;
+    }
+    
+    .images-line a {
+        width: 150px;
+        height: 107px;
+        margin-top: 3px;;
+        margin-right: 10px;
+        margin-bottom: 17px;
+    }
+
+    .images-line a img {
+        width: 150px;
+        height: 107px;
+    }
+    
+    .images-line a:hover {
+        width: 150px;
+        height: 107px;
+        margin-top: 3px;;
+        margin-right: 10px;
+        margin-bottom: 17px;
+        box-shadow: 0 0 10px white;
+    }
+    
+    #aboutUs {
+        max-width: 375px; 
+        height: 1690px;
+    }
+
+    h2 {
+        padding-left: 30px;
+    }
+
+    #aboutUs p {
+        width: 315px;
+        height: 145px;
+        position: relative;
+        right: 20px;
+    }
+
+    #members {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .member > img {
+       width: 315px;
+    }
+
+    .member {
+        margin-left: -20px;
+    }
+
+    h3 {
+        margin-left: 10px;
+    }
+    
+    #desmondP {
+        width: 315px;
+        height: 50px;
+    }
+    
+    #scolaraP {
+        width: 315px;
+        height: 50px;
+    }
+    
+    .information {
+        width: 315px;
+        height: 50px;
+    }
+
+    .social {
+        position: relative;
+        right: 80px;
+        height: 60px;
+    }
+
+    #desmondA {
+        position: relative;
+        right: 80px;
+        height: 60px;
+    }
+
+    #scolaraA {
+        position: relative;
+        right: 80px;
+        height: 60px;
+    }
+
+    .social a {
+        margin-right: 2px;
+        text-align: left;
+    }
+    
+    #form {
+        max-width: 375px; 
+        height: 969px;
+    }
+
+    #get {
+        margin-left: 30px;
+    }
+    
+    #form p {
+        width: 314px;
+        height: 150px;
+        text-align: left;
+        margin-left: 0px;
+    }
+
+    #form--input {
+        flex-direction: column;
+    }
+    
+    .formText {
+        width: 300px;
+        margin-left: 0px;
+    }
+    
+    #formComments {
+        width: 300px;
+        margin-left: 0px;
+    }
+
+    #send {
+        margin-left: 144px;
+        width: 310px;
+        margin-top: 20px;
+    }
+    
+      #contact {
+          margin-left: 30px;
+          margin-top: 1px;
+      }
+    
+      #contact p, .contacts {
+        width: 314px;
+        height: 100px;
+        margin-left: 0px;
+        position: relative;
+        right: 10px;
+      }
+    
+      .contacts {
+          position: relative;
+          left: 0px;
+          line-height: 21px;
+      }
+
+      #adress {
+          text-align: left;
+          position: relative;
+          right: 0px;
+          margin-left: 20px;
+      }
+    
+      #location {
+        padding-left: 0px;
+        position: relative;
+        right: 20px;
+        top: 0px;
+        margin-right: 6px;
+      }
+    
+      #footer {
+        max-width: 375px; 
+        height: 76px;
+        background-color: #2d303a;
+        display: flex;
+        flex-direction: row;
+      }
+    
+      #social {
+        padding-top: 21px;
+        position: relative;
+        left: 110px;
+        right: 0;
+      }
+    
+      #social a {
+        margin-right: 2px;
+      }
+  }
   
